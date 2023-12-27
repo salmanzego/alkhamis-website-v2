@@ -7,6 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
 nav{
     width: 100%;
     height: auto;
@@ -129,3 +132,107 @@ header .container .row:nth-child(2) .scroll_btn{
 }
 /* 
 #FE0000 */
+
+/* Clients Starts */
+.client_section {
+    width: 100%;
+    padding: 30px 0px;
+    margin-top: 50px;
+    background-color: #7D7463;
+}
+
+.client_section .client_logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.client_section .client_logos img {
+    max-width: 10rem;
+    opacity: 1;
+    transition: all 300ms ease-in;
+}
+
+.client_section .client_logos img:hover {
+    opacity: 0.5;
+}
+
+.client_section .owl-item {
+    display: flex;
+    justify-content: center;
+}
+.client_section .row{
+    width: 100%;
+}
+/* Clients Ends */
+
+/* footer */
+
+.footer{
+    position: relative;
+}
+.waves{
+    position: absolute;
+    width: 100%;
+}
+.footer .logo_section .logo h2{
+    color: #FE0000;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+.footer .logo_section .cta_btn a{
+    color: #FE0000;
+    font-weight: 700;
+    margin: 0rem 0.5rem;
+    text-decoration: none;
+}
+.footer .motto p{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer .contact_detials span{
+    display: flex;
+}
+.footer .contact_detials{
+    display: flex;
+    justify-content: space-between;
+}
+.footer a{
+    color: #212529;
+    font-weight: 700;
+    margin: 0rem 0.5rem;
+    text-decoration: none;
+}
+.footer .menu_page_detials span{
+    width: max-content;
+}
+
+.footer a i{
+    font-weight: 900;
+    font-size: 17px;
+}
+.contact_detials i{
+    padding: 0px 5px;
+}
+.media_links span i{
+    color: #212529;
+    font-size: 22px;
+}
+.media_links span{
+    border-radius: 50%;
+    width: 40px ;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    font-weight: 500;
+}
+.copyright .line{
+    width: 80%;
+    height: 1px;
+    background-color: #212529;
+    margin: 0 auto;
+}
