@@ -70,9 +70,9 @@
       </div>
     </div>
   </nav>
-  
+
   <div class="site_wrapper">
-    
+
     <!-- Hero section -->
     <header>
       <div class="container">
@@ -90,7 +90,7 @@
           </div>
         </div>
         <div class="row">
-          <a href="">
+          <a href="#services">
             <div class="scroll_btn">
               <i class="fa-solid fa-arrow-down-long"></i>
             </div>
@@ -99,6 +99,59 @@
       </div>
       <img class="hero_wave d-none" src="./assets/images/wave.png" alt="" />
     </header>
+
+    <!-- Services section -->
+    <section id="services">
+      <div class="service_heading">
+        <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000">What We <span>Provide</span></h2>
+      </div>
+      <div class="highlights">
+        <div class="highlight_wrapper">
+          <div class="row">
+            <div class="highlight_card col-12 col-md-4 mt-3 mt-lg-0 me-0 me-sm-3 me-lg-5" data-aos="fade-up"
+              data-aos-duration="1000">
+              <div class="content">
+                <i class="icons fa-solid fa-hammer"></i>
+                <p class="heading">
+                  General Construction
+                </p>
+                <p class="desc">
+                  The awards for design, creativity and innovation on the Internet, all over the world
+                </p>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+            <div class="highlight_card col-12 col-md-4 mt-3 mt-lg-0 me-0 me-sm-3 me-lg-5" data-aos="fade-up"
+              data-aos-duration="1000">
+              <div class="content">
+                <i class="icons fa-solid fa-brush"></i>
+                <p class="heading">
+                  Renovation
+                </p>
+                <p class="desc">
+                  Twenty spring of in esteem spirit likely estate continue new <br>building
+                </p>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+            <div class="highlight_card col-12 col-lg-4 mt-3 mt-lg-0 me-0 me-sm-3 me-lg-5" data-aos="fade-up"
+              data-aos-duration="1000">
+              <div class="content">
+                <i class="icons fa-solid fa-chalkboard-user"></i>
+                <p class="heading">
+                  Consultation
+                </p>
+                <p class="desc">
+                  Sympathize it projection ye insipidity celebrated our pianoforte
+                </p>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- client section -->
     <section>
       <div class="client_section">
@@ -114,9 +167,10 @@
         </div>
       </div>
     </section>
-    <!-- footer section -->
 
+    <!-- footer section -->
     <section>
+
       <img class="waves" src="./assets/images/wave.png" alt="" />
 
       <div class="col-12 container-fluid row footer pt-md-5">
@@ -203,7 +257,13 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      disable: function () {
+        var maxWidth = 800;
+        console.log(window.innerWidth > maxWidth);
+        return window.innerWidth < maxWidth;
+      }
+    });
   </script>
 
   <script src="./assets/js/script.js"></script>
