@@ -471,6 +471,89 @@ header .container .row:nth-child(2) .scroll_btn {
 /* 
 #FE0000 */
 
+
+/* contact starts */
+.contact_main{
+    height: 700px;
+    position: relative;
+    padding: 0px;
+    
+}
+.contact_main .grey_part{
+    background-color: #7D7463;
+    height: 70%;
+}
+.contact_main .white_part{
+    background-color: #fff;
+    height: 30%;
+}
+.contact_part{
+    position: absolute; 
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact_title h1{
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+.contact_title ul li{
+    list-style-type: none;
+    padding: 0px 1rem 0px 0px;
+    font-size: 1.3rem;
+}
+.contact_title ul{
+    padding-left: 0px;
+}
+.contact_title .line{
+    height: 20px;
+    background-color: #7D7463;
+}
+.contact_main .contact_detial span{
+    display: flex;
+}
+.contact_main .contact_detial p{
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    width: max-content;
+}
+.contact_main .contact_detial i{
+    padding-right: 1rem;
+    font-size: 1rem;
+}
+.con-img{
+    position: relative;
+}
+.contact_img img{
+    width: 90%;
+}
+.contact_img p{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+
+}
+.contact_img .overlay{
+    width: 90%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+}
+.contact_img .overlay:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+/* contact ends */
+
 /* Clients Starts */
 .client_section {
     width: 100%;
@@ -505,84 +588,94 @@ header .container .row:nth-child(2) .scroll_btn {
 
 /* Clients Ends */
 
+
 /* footer */
 
-.footer {
+.footer{
     position: relative;
+    margin: 0px;
+    padding: 0px;
 }
-
-.waves {
+.waves{
     position: absolute;
     width: 100%;
+    z-index: -1;
+    bottom: 0px;
 }
-
-.footer .logo_section .logo h2 {
+.row>*{
+    padding-left: 0px;
+} 
+.footer .logo_section .logo h2{
     color: #FE0000;
     font-size: 1.5rem;
     font-weight: bolder;
 
 }
-
-.footer .logo_section .cta_btn a {
+.footer .logo_section .cta_btn a{
     color: #FE0000;
     font-weight: 700;
     margin: 0rem 0.5rem;
     text-decoration: none;
 }
-
-.footer .motto p {
+.footer .motto p{
     font-size: 17px;
     font-weight: 500;
+    margin: 0px;
 }
 
-.footer .contact_detials span {
+.footer .contact_detials span{
     display: flex;
 }
-
-.footer .contact_detials {
+.footer .contact_detials{
     display: flex;
     justify-content: space-between;
 }
-
-.footer a {
+.footer a{
     color: #212529;
     font-weight: 700;
     margin: 0rem 0.5rem;
     text-decoration: none;
 }
-
-.footer .menu_page_detials span {
+.footer .menu_page_detials span{
     width: max-content;
 }
 
-.footer a i {
+.footer a i{
     font-weight: 900;
     font-size: 17px;
 }
-
-.contact_detials i {
+.contact_detials h2 ,.menu_page_detials h2{
+    color: #FE0000;
+    font-weight: 700;
+    margin: 0rem 0.5rem;
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+.contact_detials p{
+    color: #212529;
+    font-weight: 700;
+    margin: 0rem 0.6rem;
+    text-decoration: none;
+}
+.contact_detials i{
     padding: 0px 5px;
 }
-
-.media_links span i {
+.media_links span i{
     color: #212529;
     font-size: 22px;
 }
-
-.media_links span {
+.media_links span{
     border-radius: 50%;
-    width: 40px;
+    width: 40px ;
     height: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
-
-.copyright p {
+.copyright p{
     font-weight: 500;
 }
-
-.copyright .line {
+.copyright .line{
     width: 80%;
     height: 1px;
     background-color: #212529;
