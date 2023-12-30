@@ -17,7 +17,7 @@ window.addEventListener('scroll',()=>{
 
 jQuery(document).ready(function ($) {
   "use strict";
-  //  TESTIMONIALS CAROUSEL HOOK
+  //  client CAROUSEL HOOK
   $('.client-owl-carousel').owlCarousel({
     loop: true,
     center: true,
@@ -36,6 +36,32 @@ jQuery(document).ready(function ($) {
       },
       1170: {
         items: 6
+      }
+    }
+  });
+});
+
+jQuery(document).ready(function ($) {
+  "use strict";
+  //  TESTIMONIALS CAROUSEL HOOK
+  $('.testimonial-owl-carousel').owlCarousel({
+    loop: true,
+    center: true,
+    items: 4,
+    margin: 0,
+    autoplay: true,
+    dots: true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      1170: {
+        items: 3
       }
     }
   });
