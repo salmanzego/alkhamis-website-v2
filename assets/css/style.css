@@ -464,175 +464,181 @@ header .container .row:nth-child(2) .scroll_btn {
 
 /* about us starts */
 
-.aboutus_main{
-    position: relative;
-    height: 900px;
-
-}
- .row>*{
-    padding-right: 0px;
+.container-fluid{
+  padding: 0px;
+  margin: 0px;
 }
 .aboutus_main .overlay{
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 100;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
 }
-.image_ln{
-    position: absolute;
-    position: relative;
-    top: 10%;
-    left: 60%;
-    transform: translate(-70%);
-    height: 325px;
+.row > * {
+  padding-right: 0px;
+}
+.aboutus_main {
+  margin: 0px auto;
 }
 
 .image_pt{
-    position: relative;
-    position: absolute;
-    top: 40%;
-    transform: translate(-70%);
-    left: 35%;
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background-image: url(../images/aboutus3.jpg);
+  background-size: cover;
+  background-position: 0px 50%;
+
 }
-.image_ln img , .image_pt img{
-    width: 100%;
-    border-radius: 15px;
+.image_ln {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  background-image: url(../images/aboutus1.jpg);
+  background-size: cover;
+  background-position: 0px 70%;
+
+  
+  
 }
-.image_pt img{
+.ab{
+  margin: 0 auto;
+}
+.image_ln h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  color: #eee;
+  width: max-content;
+}
+
+.aboutus_title .line{
+  background-color: #212529;
+  height: 10px;
+  width: 100%;
+}
+.title h1{
+  width: fit-content;
 }
 .about_content{
-    position: relative;
-    background-color: #7d7463;
-    color: #eee;
-    border-radius: 15px;
-    position: absolute;
-    left: 80%;
-    top: 30%;
-    transform: translate(-70%);
-
-
 }
-.about_content p{
-    font: 14px;
-}
+
 .about_content button{
-    width: 120px;
-    padding: 5px 1px;
-    display: flex;
-    color: #fe0000;
-    font-weight: 700;
-    align-items: center;
-    border-radius: 4px;
-    justify-content: center;
-    border: 1px solid #fe0000;
-    background-color: transparent;
-    z-index: 106;
-    letter-spacing: 1px;
+  width: 100px;
+  padding: 5px 1px;
+  display: flex;
+  color: #fe0000;
+  font-weight: 700;
+  align-items: center;
+  border-radius: 4px;
+  justify-content: center;
+  border: 1px solid #fe0000;
+  background-color: transparent;
 }
 
+@media screen and (max-width: 767px) {
+  .image_pt{
+    height: 200px;
+  }
+  
+}
 /* About Us Ends */
 
 /* assests start */
 
-.company-main{
-    background-image: url(../images/CompanyAsset.jpg);
-    width: 100%;
-    height: 700px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
+.company-main {
+  background-image: url(../images/CompanyAsset.jpg);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-.company-main .overlay{
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
+.company-main .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
 }
-.workforce-main{
-    z-index: 200;
-    color: #FFFFFF;
+.workforce-main {
+  z-index: 200;
+  color: #ffffff;
 }
-.company-name h3{
-    font-family: 'Qwigley', cursive;
-    font-size: 80px;
-    font-weight: 500;
-    margin: 0px ;
-
+.company-name h3 {
+  font-family: "Qwigley", cursive;
+  font-size: 80px;
+  font-weight: 500;
+  margin: 0px;
 }
-.company-name h1{
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 900;
-
-    
+.company-name h1 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
 }
-.cmp-est{
-    position: absolute; 
-    top: 40%;
-    left: 80%;
+.cmp-est {
+  position: absolute;
+  top: 40%;
+  left: 80%;
 }
-.cmp-est h3{
-    font-family: 'Qwigley', cursive;
-    font-size: 100px;
-    font-weight: 500;
-    margin-bottom: 0px;
+.cmp-est h3 {
+  font-family: "Qwigley", cursive;
+  font-size: 100px;
+  font-weight: 500;
+  margin-bottom: 0px;
 }
-.cmp-est h2{
-    font-family: 'Qwigley', cursive;
-    font-size: 50px;
-    font-weight: 400;
-    text-transform: capitalize;
-    margin-top: -45px;
+.cmp-est h2 {
+  font-family: "Qwigley", cursive;
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-top: -45px;
 }
-.curve{
-    width: 100px; 
-    height: 40px;  
-    border: solid 1px #000;
-    border-color: #FFFFFF transparent transparent transparent;
-    border-radius: 50%/20px 10px 0 0;
-    margin-top: -10px;
+.curve {
+  width: 100px;
+  height: 40px;
+  border: solid 1px #000;
+  border-color: #ffffff transparent transparent transparent;
+  border-radius: 50%/20px 10px 0 0;
+  margin-top: -10px;
 }
-.about-cmpny h3{
-    
-    font-family: 'Source Code Pro', monospace;
+.about-cmpny h3 {
+  font-family: "Source Code Pro", monospace;
 }
-.workforce p{
-    letter-spacing: 1px;
-    font-weight: 400;
+.workforce p {
+  letter-spacing: 1px;
+  font-weight: 400;
 }
-.projects h1{
-    font-size: 70px;
-    font-weight: bolder;
-    text-transform: capitalize;
+.projects h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  text-transform: capitalize;
 }
-.projects h5{
-    font-weight: 200;
-    font-size: 25px;
+.projects h5 {
+  font-weight: 200;
+  font-size: 25px;
 }
-.projects span{
-    font-size: 40px;
-
+.projects span {
+  font-size: 40px;
 }
-.numbers{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 767px) {
-    .company-main{
-        height: 1200px;
-    }
-    .cmp-est{
-        position: static;
-    }
+  .company-main {
+    height: 1200px;
+  }
+  .cmp-est {
+    position: static;
+  }
 }
 /* Assests ends */
 
