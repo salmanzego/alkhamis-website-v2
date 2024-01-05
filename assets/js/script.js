@@ -66,3 +66,11 @@ jQuery(document).ready(function ($) {
     }
   });
 });
+
+function showaddress() {
+  if (confirm("Are you sure you want to be redirected to the location?")) {
+    window.location.href = "https://maps.app.goo.gl/Qx1766kFfZ4vHT6N6";
+  } else {
+    console.log("Redirection cancelled.");
+  }
+}
