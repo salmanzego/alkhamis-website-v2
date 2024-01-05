@@ -27,7 +27,7 @@ nav .container .row {
 }
 
 nav .logo h2 {
-    color: #fe0000;
+    color: #7d7463;
     font-size: 1.5rem;
     font-weight: bolder;
 }
@@ -61,12 +61,16 @@ nav .nav_actions .nav_btn {
     width: 100px;
     padding: 5px 1px;
     display: flex;
-    color: #fe0000;
-    font-weight: 700;
+    color: #7d7463;
+    font-weight: 300;
     align-items: center;
-    border-radius: 4px;
     justify-content: center;
-    border: 1px solid #fe0000;
+    border: 1px solid #7d7463;
+}
+nav .nav_actions .nav_btn:hover {
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+    background-color: #7d7463;
 }
 
 nav .hamburger {
@@ -267,18 +271,23 @@ header .hero_content h3 {
 
 header .hero_content .hero_btn {
     display: flex;
+    color: #7d7463;
     justify-content: center;
     width: 200px;
     padding: 15px;
     margin-top: 10px;
-    border: 2px solid #fe0000;
-    border-radius: 12px;
+    border: 2px solid #7d7463;
 }
-
+header .hero_content .hero_btn:hover {
+    transition: all 0.5s ease-in-out;
+    border: 2px solid #7d7463;
+    color: #fff;
+    background-color: #7d7463;
+}
 header .hero_content a {
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
-    color: #fe0000;
+    color: #212529;
 }
 
 header .hero_img {
@@ -377,7 +386,6 @@ header .container .row:nth-child(2) .scroll_btn {
     z-index: 1;
     background-color: #fff;
     border: 1px solid #e8e8e8;
-    border-radius: 8px;
     transition: all 300ms ease-in-out;
 }
 
@@ -385,7 +393,7 @@ header .container .row:nth-child(2) .scroll_btn {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #feed01;
+    background-color: #A8A196;
     position: absolute;
     top: 0;
     left: 0;
@@ -394,6 +402,7 @@ header .container .row:nth-child(2) .scroll_btn {
     will-change: transform;
     transition: all 0.25s ease-in-out;
     box-shadow: 0 30px 30px #eee;
+
 }
 
 @media only screen and (min-width: 1195px) {
@@ -403,7 +412,7 @@ header .container .row:nth-child(2) .scroll_btn {
     }
 
     .highlights .highlight_card:hover {
-        border: 0px solid #feed01;
+        border: 0px solid #A8A196;
     }
 
     .highlights .highlight_card:hover:after {
@@ -480,7 +489,8 @@ header .container .row:nth-child(2) .scroll_btn {
 .project_heading h2 span {
     color: #fff;
     background-color: #7d7463;
-    padding: 2px;
+    margin: 0px 4px;
+    padding:3px;
 }
 
 #projects .container {
@@ -626,15 +636,16 @@ header .container .row:nth-child(2) .scroll_btn {
 }
 .more_pj .project_btn{
     display: flex;
+    color: #7d7463;
     justify-content: center;
-    width: 150px;
+    width: fit-content;
     height: auto;
     padding: 10px;
-    border: 2px solid #212529;
+    border: 2px solid #7d7463;
     transition: all 300ms ease-in;
 }
 .more_pj .project_btn:hover{
-    background-color: #212529;
+    background-color: #7d7463;
     color: #fff;
 }
 .projects_mob .row{
@@ -718,25 +729,31 @@ header .container .row:nth-child(2) .scroll_btn {
 
 .aboutus_title .line {
     background-color: #212529;
-    height: 10px;
+    height: 2px;
     width: 100%;
 }
 
 .title h1 {
     width: fit-content;
+    font-weight: 400;
 }
 
 .about_content button {
-    width: 100px;
-    padding: 5px 1px;
+    width: 120px;
+    padding: 5px 0px;
     display: flex;
-    color: #fe0000;
-    font-weight: 700;
+    color: #212529;
+    font-weight: 300;
     align-items: center;
-    border-radius: 4px;
     justify-content: center;
-    border: 1px solid #fe0000;
+    border: 1px solid #212529;
     background-color: transparent;
+}
+.about_content button:hover{
+    background-color: #212529;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
 }
 
 @media screen and (max-width: 767px) {
@@ -748,77 +765,19 @@ header .container .row:nth-child(2) .scroll_btn {
 
 /* About Us Ends */
 
-/* assests start */
+/* assets start */
 
 .company-main {
-    background-image: url(../images/CompanyAsset.jpg);
     width: 100%;
-    height: 700px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
+    height: auto;
+    padding: 3rem 0px;
+    background-color: #7d7463;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
-.company-main .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-}
-
 .workforce-main {
-    z-index: 200;
-    color: #ffffff;
-}
-
-.company-name h3 {
-    font-family: "Qwigley", cursive;
-    font-size: 80px;
-    font-weight: 500;
-    margin: 0px;
-}
-
-.company-name h1 {
-    font-family: "Source Code Pro", monospace;
-    font-weight: 900;
-}
-
-.cmp-est {
-    position: absolute;
-    top: 40%;
-    left: 80%;
-}
-
-.cmp-est h3 {
-    font-family: "Qwigley", cursive;
-    font-size: 100px;
-    font-weight: 500;
-    margin-bottom: 0px;
-}
-
-.cmp-est h2 {
-    font-family: "Qwigley", cursive;
-    font-size: 50px;
-    font-weight: 400;
-    text-transform: capitalize;
-    margin-top: -45px;
-}
-
-.curve {
-    width: 100px;
-    height: 40px;
-    border: solid 1px #000;
-    border-color: #ffffff transparent transparent transparent;
-    border-radius: 50%/20px 10px 0 0;
-    margin-top: -10px;
-}
-
-.about-cmpny h3 {
-    font-family: "Source Code Pro", monospace;
+    color: #fff;
 }
 
 .workforce p {
@@ -846,6 +805,12 @@ header .container .row:nth-child(2) .scroll_btn {
     justify-content: space-between;
     margin-top: 100px;
 }
+.numbers .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 
 @media screen and (max-width: 767px) {
     .company-main {
@@ -857,7 +822,7 @@ header .container .row:nth-child(2) .scroll_btn {
     }
 }
 
-/* Assests ends */
+/* Assets ends */
 
 /* Testimonial Starts */
 .testimonial_section {
@@ -865,11 +830,28 @@ header .container .row:nth-child(2) .scroll_btn {
     padding: 30px;
 }
 
+.testimonial_heading {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial_heading h2 {
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.testimonial_heading h2 span {
+    color: #fff;
+    padding: 0px 4px;
+    background-color: #7d7463;
+    
+}
+
 .testimonial_section .testimonial_card {
     width: 300px;
     padding: 20px;
     min-height: 400px;
-    background-color: #7d7463;
+    background-color: #fff;
     border-radius: 12px;
     opacity: 0.2;
     -webkit-transform: scale3d(0.8, 0.8, 1);
@@ -906,7 +888,7 @@ header .container .row:nth-child(2) .scroll_btn {
 .testimonial_section .testimonial_card .testimonial_txt {
     margin-top: 20px;
     text-align: center;
-    color: #eee;
+    color: #000;
 }
 
 .testimonial_section .testimonial_card .testimonial_txt .testimonial_name {
@@ -964,7 +946,7 @@ header .container .row:nth-child(2) .scroll_btn {
 }
 
 .contact_title .line {
-    height: 20px;
+    height: 2px;
     background-color: #7d7463;
 }
 
@@ -998,7 +980,8 @@ header .container .row:nth-child(2) .scroll_btn {
     text-align: center;
     font-weight: 500;
     font-size: 1.1rem;
-    padding-top: 1rem;
+    padding: 1rem 1.5rem;
+
 }
 
 .contact_img .overlay {
@@ -1016,7 +999,6 @@ header .container .row:nth-child(2) .scroll_btn {
     padding: 15px;
     margin-top: 10px;
     border: 2px solid #fff;
-    border-radius: 12px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1031,7 +1013,8 @@ header .container .row:nth-child(2) .scroll_btn {
 .con-img .overlay_btn:hover {
     transition: all 0.5s ease-in-out;
     border: 2px solid #fff;
-    color: #fff;
+    color: #212529;
+    background-color: #fff;
 }
 
 @media screen and (max-width: 750px) {
@@ -1093,6 +1076,7 @@ header .container .row:nth-child(2) .scroll_btn {
     width: 100%;
     z-index: -1;
     bottom: 0px;
+    left: 0;
 }
 
 .row>* {
@@ -1108,7 +1092,7 @@ header .container .row:nth-child(2) .scroll_btn {
 .footer .logo_section .cta_btn a {
     color: #fe0000;
     font-weight: 700;
-    margin: 0rem 0.5rem;
+    margin: 0rem 0rem;
     text-decoration: none;
 }
 
