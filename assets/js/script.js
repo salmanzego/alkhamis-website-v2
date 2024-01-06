@@ -1,6 +1,7 @@
 $('#hamburger').click(() => {
   document.getElementById('sidebar_toggle').classList.toggle('open');
   document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('body').classList.toggle('open');
 });
 
 window.addEventListener('scroll',()=>{
