@@ -219,7 +219,7 @@ nav .hamburger {
 }
 
 .sidebar ul li a:hover {
-    color: #feed01;
+    color: #212529;
     text-decoration: none;
 }
 
@@ -336,6 +336,10 @@ header .container .row:nth-child(2) .scroll_btn {
 }
 
 /* Header Ends */
+body.open{
+    overflow-y: hidden;
+}
+
 
 /* Highlights Start */
 #services {
@@ -381,7 +385,7 @@ header .container .row:nth-child(2) .scroll_btn {
 
 .highlights .highlight_card {
     position: sticky;
-    overflow: visible;
+    overflow: hidden;
     top: 200px;
     width: 350px;
     height: auto;
