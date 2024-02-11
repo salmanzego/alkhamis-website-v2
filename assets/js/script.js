@@ -1,6 +1,7 @@
 $('#hamburger').click(() => {
   document.getElementById('sidebar_toggle').classList.toggle('open');
   document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('body').classList.toggle('open');
 });
 
 window.addEventListener('scroll',()=>{
@@ -17,7 +18,7 @@ window.addEventListener('scroll',()=>{
 
 jQuery(document).ready(function ($) {
   "use strict";
-  //  TESTIMONIALS CAROUSEL HOOK
+  //  client CAROUSEL HOOK
   $('.client-owl-carousel').owlCarousel({
     loop: true,
     center: true,
@@ -40,3 +41,37 @@ jQuery(document).ready(function ($) {
     }
   });
 });
+
+jQuery(document).ready(function ($) {
+  "use strict";
+  //  TESTIMONIALS CAROUSEL HOOK
+  $('.testimonial-owl-carousel').owlCarousel({
+    loop: true,
+    center: true,
+    items: 4,
+    margin: 0,
+    autoplay: true,
+    dots: true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      1170: {
+        items: 3
+      }
+    }
+  });
+});
+
+function showaddress() {
+  if (confirm("Are you sure you want to be redirected to the location?")) {
+    window.location.href = "https://maps.app.goo.gl/Qx1766kFfZ4vHT6N6";
+  } else {
+    console.log("Redirection cancelled.");
+  }
+}
